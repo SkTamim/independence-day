@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="flag.png">
+    <title>Happy Independence Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flag">
+        <div class="saffron"></div>
+        <div class="white">
+            <div class="ashok-chakra">
+                <div class="ashok-chakra-line"></div>
+                <div class="ashok-chakra-line"></div>
+                <div class="ashok-chakra-line"></div>
+                <div class="ashok-chakra-line"></div>
+                <div class="ashok-chakra-line"></div>
+                <div class="ashok-chakra-line"></div>
+                <div class="ashok-chakra-line"></div>
+                <div class="ashok-chakra-line"></div>
+                <div class="ashok-chakra-line"></div>
+                <div class="ashok-chakra-line"></div>
+                <div class="ashok-chakra-line"></div>
+                <div class="ashok-chakra-line"></div>
+            </div>
+        </div>
+        <div class="green"></div>
+    </div>
+    <h1>
+        <span style="color:#ff9933">happy</span>
+        <span style="color:#fff">independence</span>
+        <span style="color:#128807">day</span>
+    </h1>
+    <audio src="national-anthem.mp3" autoplay controls id="audio"></audio>
+
+    <div class="btns">
+        <button id="stop">pause music</button>
+        <button id="resume">resume music</button>
+    </div>
+    <div class="btns">
+        <button id="stop-fireworks">stop fireworks</button>
+        <button id="start-fireworks">start fireworks</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="jquery.fireworks.js"></script>
+    <script>
+        $('body').fireworks();
+
+
+        const audio = document.getElementById('audio');
+        const stop = document.getElementById('stop');
+        const resume = document.getElementById('resume');
+        const startFireworks = document.getElementById('start-fireworks');
+        const stopFireworks = document.getElementById('stop-fireworks');
+
+        stop.addEventListener('click', () => {
+            audio.pause();
+        })
+        resume.addEventListener('click', () => {
+            audio.play();
+        })
+        stopFireworks.addEventListener('click', () => {
+            document.querySelector('canvas').style.display = 'none';
+        })
+        startFireworks.addEventListener('click', () => {
+            document.querySelector('canvas').style.display = 'block';
+        })
+
+    </script>
+</body>
+
+</html>

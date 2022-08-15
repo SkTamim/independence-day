@@ -1,0 +1,188 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: arial, sans-serif;
+    background-color: rgb(1, 6, 111);
+    background: linear-gradient(195deg, rgb(2, 84, 105) 0%, rgb(1, 6, 111) 100%);
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flag {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(119, 119, 119, 0.125);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+
+.saffron {
+    background-color: #ff9933;
+}
+
+.white {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green {
+    background-color: #128807;
+}
+
+.ashok-chakra {
+    border: 5px solid #000088;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+.ashok-chakra-line {
+    height: 102%;
+    width: 2px;
+    background-color: #000088;
+    position: absolute;
+    top: 0;
+    left: 49%;
+}
+
+.ashok-chakra div:nth-child(1) {
+    transform: rotate(15deg)
+}
+
+.ashok-chakra div:nth-child(2) {
+    transform: rotate(30deg)
+}
+
+.ashok-chakra div:nth-child(3) {
+    transform: rotate(45deg)
+}
+
+.ashok-chakra div:nth-child(4) {
+    transform: rotate(60deg)
+}
+
+.ashok-chakra div:nth-child(5) {
+    transform: rotate(75deg)
+}
+
+.ashok-chakra div:nth-child(6) {
+    transform: rotate(90deg)
+}
+
+.ashok-chakra div:nth-child(7) {
+    transform: rotate(105deg)
+}
+
+.ashok-chakra div:nth-child(8) {
+    transform: rotate(120deg)
+}
+
+.ashok-chakra div:nth-child(9) {
+    transform: rotate(135deg)
+}
+
+.ashok-chakra div:nth-child(10) {
+    transform: rotate(150deg)
+}
+
+.ashok-chakra div:nth-child(11) {
+    transform: rotate(165deg)
+}
+
+.ashok-chakra div:nth-child(12) {
+    transform: rotate(180deg)
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    z-index: 10;
+    background-color: rgb(70, 77, 218);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    transition: .3s;
+    margin: 5px 10px;
+}
+
+button:hover {
+    background-color: rgb(36, 45, 215);
+}
+
+.btns {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+    .flag {
+        width: 400px;
+        height: 250px;
+    }
+
+    .ashok-chakra {
+        border: 3px solid #000088;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:405px) {
+    .flag {
+        width: 300px;
+        height: 200px;
+    }
+
+    .ashok-chakra {
+        border: 3px solid #000088;
+        width: 50px;
+        height: 50px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:319px) {
+    .flag {
+        width: 230px;
+        height: 150px;
+    }
+
+    .ashok-chakra {
+        border: 3px solid #000088;
+        width: 40px;
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
